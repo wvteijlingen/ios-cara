@@ -16,4 +16,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build
-      run: bundle exec fastlane lint_and_test
+      run: fastlane lint_and_test
