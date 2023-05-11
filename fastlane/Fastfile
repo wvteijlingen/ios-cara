@@ -4,17 +4,11 @@ fastlane_version '2.121.0'
 # Don't generate README files.
 skip_docs
 
-##########################
-### BUILD SERVER SETUP ###
-##########################
-
-setup_travis
-
 #############
 ### LANES ###
 #############
 
-lane :pr do
+lane :lint_and_test do
   # Check the code formatting.
   swiftlint strict: true,
             path: "Example",
